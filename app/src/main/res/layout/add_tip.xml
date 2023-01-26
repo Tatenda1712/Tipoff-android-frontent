@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_edittext"
+        android:drawablePadding="8dp"
+        android:hint="Type your tip"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey_light" />
+
+    <ImageButton
+        android:id="@+id/cancel"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:src="@drawable/ic_baseline_cancel_schedule_send_24" />
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/send_tip"
+        android:src="@drawable/ic_baseline_send_24"
+        android:background="@color/white"
+        android:layout_below="@+id/tip"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>

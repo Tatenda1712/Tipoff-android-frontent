@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/cardview"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:elevation="8dp"
+        android:backgroundTint="@color/primary"
+        android:background="@color/primary"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tipoff"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="tatenda musodza you are awesome tatendamusodza you are awesome"/>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linear"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cardview"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/likes"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/ic_baseline_thumb_up_alt_24"
+            android:text="1k"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/comments"
+            android:backgroundTint="@color/primary"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_message_24"
+            android:layout_toRightOf="@+id/likes"
+            android:text="200"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/comments"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
+            android:id="@+id/share"
+            android:drawableLeft="@drawable/ic_baseline_share_24"
+            android:text="5"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
